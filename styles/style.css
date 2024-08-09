@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* shared style */
+:root {
+  --dark-gray: #3a3a3a;
+  --black-dark: #18191f;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.shared-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.btn-primary {
+  background-color: #e02c6d;
+  color: #ffffff;
+}
+main {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+/* header styles  */
+
+/* nav styles  */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.nav-bar .nav-left {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+  font-weight: 700;
+}
+.nav-bar .nav-lists {
+  display: flex;
+  gap: 34px;
+}
+.nav-bar .nav-list {
+  list-style: none;
+}
+.nav-bar .nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+.nav-lists .icon {
+  font-size: 1.5rem;
+}
+
+/* banner related styles here  */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.banner-description .banner-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+.banner-para {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.5;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+.banner .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 41px;
+  border: none;
+}
+
+.banner-image {
+  background-image: url("../images/Circle\ design.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sponsers {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  margin-bottom: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+}
+.banner-image image {
+  /* width: 90%; */
+}
+/* main section start from here  */
+/* section popular  */
+.collection .collection-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.collection-card span .star-icon {
+  color: #fb8200;
+  font-size: 0.8rem;
+  margin: 0.125rem;
+}
+.collection-card .rating-number {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  color: rgba(94, 99, 102, 1);
+}
+.collection-card {
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  width: 340px;
+  /* align-items: center; */
+}
+.collection-card .card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--black-dark);
+  margin-top: 1rem;
+  margin-bottom: 6px;
+}
+.collection-card .product-price {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.77);
+  font-weight: 400;
+}
+.collection-card .description {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #787885;
+}
+.collection .see-more {
+  color: rgba(224, 44, 109, 0.87);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+/* feature related styles here */
+.featured-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-details .feature-name {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #0a0826;
+  margin-bottom: 16px;
+}
+.products-details .feature-desc {
+  color: rgba(108, 108, 108, 1);
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+.products-details .btn-primary {
+  border: none;
+  padding: 10px 24px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* footer related styles here  */
+footer {
+  text-align: center;
+  margin-top: 100px;
+  background-color: #0a0826;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.footer-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-links ul li {
+  list-style: none;
+}
+.footer-link-lists li a {
+  color: #ffffff;
+}
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.footer-desc {
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+.footer-icon {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: var(--dark-gray);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/* media query related styles  */
+
+/* mobile device  */
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .nav-bar .nav-lists {
+    flex-direction: column;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .banner-description .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-description .banner-title {
+    font-size: 2.5rem;
+  }
+  .banner-description .banner-para {
+    font-size: 0.9rem;
+  }
+  .banner-image img {
+    width: 90%;
+  }
+  .sponsers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .collection-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .collection-card {
+    width: 100%;
+  }
+  .collection .see-more {
+    margin-right: 10px;
+  }
+  .featured-products {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  .feature-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    text-align: center;
+  }
+  .banner-description .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .collection-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .collection .see-more {
+    justify-content: center;
+  }
+  .featured-products {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featured-products img {
+    width: 70%;
+  }
+}
